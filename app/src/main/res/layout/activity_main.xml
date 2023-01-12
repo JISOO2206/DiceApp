@@ -46,6 +46,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/diceBtn"
         android:text="주사위 굴리기"
         android:layout_margin="50dp"
         android:layout_width="match_parent"
