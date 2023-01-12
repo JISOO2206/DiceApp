@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#008000"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
 
-    <LinearLayout
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_marginTop="100dp"
-        android:layout_height="200dp">
+        android:layout_height="match_parent"
+        android:background="#008000"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="인생은 주사위 한 방?"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/diceBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:text="인생은 주사위 한 방?"/>
+            android:layout_margin="50dp"
+            android:text="주사위 굴리기" />
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:weightSum="2">
-
-        <ImageView
-            android:src="@drawable/dice_1"
-            android:layout_width="120dp"
-            android:layout_weight="1"
-            android:layout_height="120dp" />
-
-        <ImageView
-            android:src="@drawable/dice_1"
-            android:layout_weight="1"
-            android:layout_width="120dp"
-            android:layout_height="120dp" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/diceBtn"
-        android:text="주사위 굴리기"
-        android:layout_margin="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
-</LinearLayout>
+</layout>
