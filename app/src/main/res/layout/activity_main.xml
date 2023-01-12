@@ -20,10 +20,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:fontFamily="@font/bmjua_ttf"
                 android:text="인생은 주사위 한 방?"
                 android:textColor="#FFFFFF"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+                android:textSize="30dp" />
 
 
         </LinearLayout>
@@ -54,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
+            android:fontFamily="@font/bmjua_ttf"
             android:text="주사위 굴리기" />
 
 
